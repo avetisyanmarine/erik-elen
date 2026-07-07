@@ -43,7 +43,7 @@ export const ThirdPage = () => {
               ImageSrc={SvgRing}
               number={"17:00"}
               bigText="ԶԱԳՍ"
-              // smallText="Տոնական օրվա ավարտ"
+              smallText="Ռեստորանի բացօդյա հատված"
               direction="left"
             />
             <SvgWaveLine />
@@ -69,7 +69,7 @@ export const ThirdPage = () => {
           <ForthPageBlock
             ImageSrc={Church}
             bigText={"Սուրբ Հովհաննես Մկրտիչ եկեղեցի"}
-            mapSrc={"https://yandex.com/maps/-/CTuQiLkx"}
+            mapSrc={"https://maps.app.goo.gl/tpEMNUzJJBkBVFEC8"}
           />
           <ForthPageBlock
             className={"english"}
