@@ -38,34 +38,42 @@ export const ThirdPage = () => {
               bigText="ՖՈՏՈՍԵՍԻԱ"
               direction="right"
             />
+             <ThirdPageBlock
+              className={"english"}
+              ImageSrc={SvgRing}
+              number={"17:00"}
+              bigText="ԶԱԳՍ"
+              // smallText="Տոնական օրվա ավարտ"
+              direction="left"
+            />
             <SvgWaveLine />
             <ThirdPageBlock
-            className={"english"}
+              className={"english"}
               ImageSrc={SvgCouple}
               number={"17:30"}
               bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
               smallText="Ginats Restaurant Complex"
-              direction="left"
+              direction="right"
             />
             <ThirdPageBlock
-            className={"english"}
+              className={"english"}
               ImageSrc={Shine}
               number={"23:00"}
               bigText="Տոնական օրվա ավարտ"
               // smallText="Տոնական օրվա ավարտ"
-              direction="right"
+              direction="left"
             />
           </ThirdPagePartContext>
         </ThirdPagePartContext>
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Սուրբ Հովհաննես Մկրտիչ եկեղեցի"}
             mapSrc={"https://yandex.com/maps/-/CTuQiLkx"}
           />
           <ForthPageBlock
+            className={"english"}
             ImageSrc={Restaurant}
-            bigText={"Աշտարակ Հոլ ռեստորան"}
+            bigText={"Ginats Restaurant Complex"}
             mapSrc={"https://yandex.com/maps/-/CTuQm-0w"}
           />
         </ForthPagePartContext>

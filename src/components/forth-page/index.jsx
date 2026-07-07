@@ -7,6 +7,9 @@ import PhotoF1 from "../../assets/image/photof1.webp";
 import PhotoF2 from "../../assets/image/photof2.webp";
 import PhotoF3 from "../../assets/image/photof3.webp";
 import PhotoF4 from "../../assets/image/photof4.webp";
+import PhotoF5 from "../../assets/image/photof5.webp";
+import PhotoF6 from "../../assets/image/photof6.webp";
+import PhotoF7 from "../../assets/image/photof7.webp";
 import { useEffect, useState } from "react";
 
 export const ForthPage = () => {
@@ -36,6 +39,9 @@ export const ForthPage = () => {
     { src: PhotoF2, alt: "Wedding photo 2" },
     { src: PhotoF3, alt: "Wedding photo 3" },
     { src: PhotoF4, alt: "Wedding photo 4" },
+    { src: PhotoF5, alt: "Wedding photo 4" },
+    { src: PhotoF6, alt: "Wedding photo 4" },
+    { src: PhotoF7, alt: "Wedding photo 4" },
   ];
   useEffect(() => {
     const interval = setInterval(() => {

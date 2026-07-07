@@ -1,13 +1,13 @@
 import { ForthPageBlockPart } from "./styled";
-export const ForthPageBlock = ({ ImageSrc, bigText, mapSrc }) => {
+export const ForthPageBlock = ({ ImageSrc, bigText, mapSrc, className }) => {
   return (
     <>
       <ForthPageBlockPart>
-        <h2>{bigText}</h2>
+        <h2 className={className || ""}>{bigText}</h2>
         <img
           loading="lazy"
           data-aos="fade-right"
-          className="rounded-[15px]"
+          className={`rounded-[15px]`}
           src={ImageSrc}
         />
         <a
