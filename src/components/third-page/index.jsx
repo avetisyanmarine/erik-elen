@@ -68,6 +68,7 @@ export const ThirdPage = () => {
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
+            bigText={"Սուրբ Հովհաննես Մկրտիչ եկեղեցի"}
             mapSrc={"https://yandex.com/maps/-/CTuQiLkx"}
           />
           <ForthPageBlock
