@@ -4,7 +4,7 @@ import { Flexible } from "../../GlobalStyle";
 const ThirdPagePart = styled.div`
   h2 {
     width: fit-content;
-    margin: auto;
+    margin: 35px auto 10px auto;
   }
   .photo2 {
     margin-top: 50px;
@@ -13,9 +13,13 @@ const ThirdPagePart = styled.div`
    .uniqueone{
     margin-top: 40px;
   }
+  h2 {
+    margin-bottom: 50px;
+  }
 `;
 const ThirdPagePartContext = styled.div`
   overflow: hidden;
+  position: relative;
   .secondBlock {
     margin-left: 19px;
   }

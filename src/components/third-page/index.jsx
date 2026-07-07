@@ -5,15 +5,18 @@ import {
   ThirdPagePartMini,
 } from "./styled";
 import { Container } from "../../GlobalStyle";
-import SvgChurch from "../../assets/vectors/church.png";
-import Church from "../../assets/image/church.jpg";
-import Restaurant from "../../assets/image/restoran.jpg";
-import Photo2 from "../../assets/image/photo2.jpg";
+import SvgChurch from "../../assets/vectors/churchsvg.webp";
+import Church from "../../assets/image/church.webp";
+import Restaurant from "../../assets/image/restoran.webp";
+import Photo2 from "../../assets/image/photo2.webp";
 import SvgRing from "../../assets/vectors/ring.png";
+import Photosesia from "../../assets/vectors/photosesia.webp";
 import SvgCouple from "../../assets/vectors/cup.png";
+import Shine from "../../assets/vectors/shine.webp";
 import { ForthPagePartContext, ForthPagePart } from "../forth-page/styled";
 import { ForthPageBlock } from "../forth-page/fortg-page-block";
 import { ThirdPageBlock } from "./third-page-block";
+import { SvgWaveLine } from "./svg-wave/index";
 
 export const ThirdPage = () => {
   return (
@@ -21,37 +24,49 @@ export const ThirdPage = () => {
       <Container>
         <h2>Ծրագիր</h2>
         <ThirdPagePartContext>
-          <ThirdPageBlock
-            className="uniqueone"
-            ImageSrc={SvgRing}
-            number={"12:00"}
-            bigText="ՀԱՐՍԻ ՏՈՒՆ"
-          />
-          <ThirdPageBlock
-            ImageSrc={SvgChurch}
-            number={"15:45"}
-            bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Հովհաննավանք եկեղեցի"
-          />
-          <ThirdPageBlock
-            className="secondBlock"
-            line={true}
-            ImageSrc={SvgCouple}
-            number={"17:00"}
-            bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Աշտարակ Հոլ ռեստորան"
-          />
+          <ThirdPagePartContext>
+            <ThirdPageBlock
+              ImageSrc={SvgChurch}
+              number={"14:00"}
+              bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
+              smallText="Սուրբ Հովհաննես Մկրտիչ եկեղեցի"
+              direction="left"
+            />
+            <ThirdPageBlock
+              ImageSrc={Photosesia}
+              number={"15:30"}
+              bigText="ՖՈՏՈՍԵՍԻԱ"
+              direction="right"
+            />
+            <SvgWaveLine />
+            <ThirdPageBlock
+            className={"english"}
+              ImageSrc={SvgCouple}
+              number={"17:30"}
+              bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
+              smallText="Ginats Restaurant Complex"
+              direction="left"
+            />
+            <ThirdPageBlock
+            className={"english"}
+              ImageSrc={Shine}
+              number={"23:00"}
+              bigText="Տոնական օրվա ավարտ"
+              // smallText="Տոնական օրվա ավարտ"
+              direction="right"
+            />
+          </ThirdPagePartContext>
         </ThirdPagePartContext>
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Հովհաննավանք եկեղեցի"}
-            mapSrc={"https://yandex.com/maps/org/224495205780?"}
+            bigText={"Սուրբ Հովհաննես Մկրտիչ եկեղեցի"}
+            mapSrc={"https://yandex.com/maps/-/CTuQiLkx"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
             bigText={"Աշտարակ Հոլ ռեստորան"}
-            mapSrc={"https://yandex.com/maps/org/100881804174?"}
+            mapSrc={"https://yandex.com/maps/-/CTuQm-0w"}
           />
         </ForthPagePartContext>
       </Container>
@@ -61,12 +76,12 @@ export const ThirdPage = () => {
           <h3 className="dzev">Սիրով սպասում ենք</h3>
           <hr />
           <h3 className="dzev">Պահպանիր Օրը</h3>
-          <h3>Հուլիս</h3>
+          <h3>Սեպտեմբեր</h3>
         </ThirdPagePartMini>
         <ThirdPagePartCalendar>
           {[...Array(35)].map((_, i) =>
-            i > 1 && i <= 32 ? (
-              <div className={i - 1 == 4 ? "special" : ""}>{i - 1}</div>
+            i > 0 && i <= 30 ? (
+              <div className={i == 20 ? "special" : ""}>{i}</div>
             ) : (
               <div></div>
             ),

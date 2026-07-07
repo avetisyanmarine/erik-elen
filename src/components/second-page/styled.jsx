@@ -5,8 +5,8 @@ const SecondPagePart = styled.div`
         text-align: center;
     }
     h2 {
-        color: #3d3a3a;
-        font-size: 48px;
+        color: #000000b0;
+        font-size: 60px;
         font-weight: 600;
         font-family: ArmAllegrou;
         letter-spacing: 10px;
@@ -19,6 +19,7 @@ const SecondPagePartContext = styled.div`
         gap: 20px;
         justify-content: center;
         align-items: center;
+        margin-top: 25px;
         text-align: center;
         img {
             object-fit: cover;

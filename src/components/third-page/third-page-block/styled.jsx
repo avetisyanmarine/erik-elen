@@ -2,10 +2,18 @@ import styled from "styled-components";
 import { Flexible } from "../../../GlobalStyle";
 
 export const ThirdPageBlockPart = styled(Flexible)`
-  justify-content: start;
-  gap: 40px;
-  margin-top: 120px;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  
+  /* Այստեղ ենք որոշում դիրքը */
+  align-items: ${({ direction }) => 
+    direction === "right" ? "flex-end" : 
+    direction === "left" ? "flex-start" : "center"};
+    
+  text-align: ${({ direction }) => (direction === "right" ? "right" : "left")};
 `;
+
 export const ThirdPageBlockPartSvg = styled.div`
   position: relative;
   img {
@@ -13,27 +21,12 @@ export const ThirdPageBlockPartSvg = styled.div`
     height: 100%;
     object-fit: contain;
   }
-  ${({ line }) =>
-    !line &&
-    `
-      &::before {
-        content: "";
-        position: absolute;
-        top: 86px; 
-        left: 50%;
-        transform: translateX(-50%);
-        width: 2px;
-        margin-top: 11px;
-        height: 102px;
-        background: #3d3a3a;
-        border-radius: 50px;
-      }
-    `}
 `;
+
 export const ThirdPageBlockPartContext = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  /* Տեքստի հավասարեցումը ըստ direction-ի */
+  align-items: ${({ direction }) => (direction === "right" ? "flex-end" : "flex-start")};
   gap: 12px;
 `;

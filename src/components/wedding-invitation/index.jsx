@@ -39,7 +39,7 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
         animate={topControls}
         initial={{ y: 0 }}
         style={{
-          backgroundColor: "#e7e4e4",
+          backgroundColor: "#ffffff",
           clipPath: "polygon(-120% 0%, 215% 0%, 50% 100%)",
           borderBottom: "1px solid rgba(255,255,255,0.1)",
         }}
@@ -50,7 +50,7 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
         animate={bottomControls}
         initial={{ y: 0 }}
         style={{
-          backgroundColor: "#c9c7c4", // Հիմնական մուգ գույնը
+          backgroundColor: "#ebe1d5", // Հիմնական մուգ գույնը
           clipPath: "polygon(-120% 0%, 205% 0%, 50% 100%)",
           rotate: "180deg",
         }}
@@ -65,11 +65,11 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
           onClick={handleOpen}
         >
           <img
-            src="letterbutton.png"
+            src="letterbutton.webp"
             alt="Seal"
             className="w-38 h-38 md:w-32 md:h-32 object-contain"
           />
-          <h2 className="text-[#e7e4e4] text-[35px] mb-1 text-center">Բացել</h2>
+          <h2 className="text-[#fff] text-[35px] mb-1 text-center">Բացել</h2>
         </motion.div>
       )}
     </div>

@@ -1,7 +1,6 @@
 import { SecondPagePart, SecondPagePartContext } from "./styled";
 import { Container } from "../../GlobalStyle";
-import Sign from "../../assets/vectors/sign.png";
-import Photo1 from "../../assets/image/photo1.jpg";
+import Photo1 from "../../assets/image/photo1.webp";
 
 export const SecondPage = () => {
   return (
@@ -9,7 +8,6 @@ export const SecondPage = () => {
       <Container>
         <SecondPagePartContext>
           <div>
-            <img loading="lazy" src={Sign} alt="Sign" />
             <h4 data-aos="fade-left">
               Սիրով հրավիրում ենք Ձեզ մասնակցելու մեր կյանքի կարևոր և հիշարժան
               օրվան։
@@ -22,7 +20,7 @@ export const SecondPage = () => {
           alt="Photo 1"
           className="rounded-[15px]"
         />
-        <h2>04.07.2026</h2>
+        <h2>20.09.2026</h2>
       </Container>
     </SecondPagePart>
   );

@@ -28,7 +28,7 @@ export const MusicPage = ({ isPlaying }) => {
   return (
     <MusicPagePart>
       <div>
-        <h4 className="text-[16px]">Mon Amour</h4>
+        <h4 className="text-[16px]">Sirum Em</h4>
       </div>
       <div onClick={handleClick}>
         <img src={manualPlay ? Pause : Play} alt="music-control" />
