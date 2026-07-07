@@ -39,7 +39,6 @@ export const ThirdPage = () => {
               direction="right"
             />
              <ThirdPageBlock
-              className={"english"}
               ImageSrc={SvgRing}
               number={"17:00"}
               bigText="ԶԱԳՍ"
