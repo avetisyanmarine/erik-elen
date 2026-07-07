@@ -42,7 +42,7 @@ export const ThirdPage = () => {
               ImageSrc={SvgRing}
               number={"17:00"}
               bigText="ԶԱԳՍ"
-              smallText="Ռեստորանի բացօդյա հատված"
+              smallText="Ռեստորանի բացօթյա հատված"
               direction="left"
             />
             <SvgWaveLine />
